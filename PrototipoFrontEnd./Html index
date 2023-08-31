@@ -1,0 +1,154 @@
+<header>
+    <div class="header-container">
+        <div class="logo-container">
+            <img class="logo img-responsive" src="https://genesis-buc.udes.edu.co/dist/img/logo_udes.png" alt="UDES Logo">
+        </div>
+        <div class="text-container">
+            <h1 class="hidden-xs artemisa">Artemisa</h1>
+            <h3 class="msl_lema hidden-xs">Sistema de formulario dinamico</h3>
+            <h4 class="msl_lema hidden-xs ng-binding">Bucaramanga</h4>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Crear formulario</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+          
+          
+<!-- Bootstrap 4 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- font awesome  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+
+<link href="css/style.css" rel="stylesheet" />
+<!-- jquiery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- jquery ui -->
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+<!-- custom function inculde it above th body closing tag some times it not works in head tag -->
+<script src="js/custom-js.js"></script>
+
+<div class="container p-4">
+    <div class="row m-0" id="add_new_view_row">
+<div class="col-md-4 border-right sortable_left">
+    <input type="text" class="form-control mb-0" placeholder="Filtra opciones aqui..." id="myInput"
+        onkeyup="myFunction_dashboard()" />
+    <ul id="sortable1" class="pl-0 menu_list js-sortable-group js-drop-target bg-light p-3">
+        <li class="ui-state-default">
+            <div id="r_1" class="p-2 alert alert-secondary fade show alert_box course d-block"
+                optiondata="Contact">
+                <i class="fas fa-grip-vertical d_icon"></i>
+                <span class="snipcss-QlJsn"> <!-- Wrap button content -->
+                    <input type="text" class="input-box" style="width: 125px;" placeholder="Enter Text">
+                </span>
+            </div>
+        </li>
+
+        <li class="ui-state-default">
+            <div id="r_2" class="p-2 alert alert-secondary fade show alert_box course d-block"
+                optiondata="contact2">
+                <i class="fas fa-grip-vertical d_icon"></i>
+                <span class="snipcss-QlJsn"> <!-- Wrap button content -->
+                    <input type="text" class="input-box" style="width: 125px;" placeholder="Enter Text">
+                </span>
+            </div>
+        </li>
+
+        <!-- Third box with Yes/No checkmark -->
+        <li class="ui-state-default">
+            <div id="r_3" class="p-2 alert alert-secondary fade show alert_box course d-block"
+                optiondata="YesNo">
+                <i class="fas fa-check"></i> Si
+                <input type="checkbox" class="ml-2">
+                <i class="fas fa-check"></i> No
+                <input type="checkbox" class="ml-2">
+            </div>
+        </li>
+
+        <!-- Dropdown Menu Button -->
+        <li class="ui-state-default">
+            <div class="dropdown">
+                <select class="form-select" aria-label="Dropdown Select">
+                    <option selected>Select an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+        <div class="col-md-4 sortable_right">
+            <input type="text" class="form-control mb-0" placeholder="Filtra opciones aqui" id="myInput2"
+                onkeyup="myFunction_dashboard2()" />
+            <ul id="sortable2" class="pl-0 menu_list js-sortable-group js-drop-target bg-light p-3">
+                <!-- Divs created through drag-and-drop will be placed here -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="footer-content">
+        <p>
+            Universidad de Santander - Sistemas de información
+            <br>
+            Todos los derechos reservados © 2016
+            <br>
+            Institución de Educación Superior sujeta a la inspección y vigilancia del Ministerio de Educación Nacional
+        </p>
+        <p style="display: none">
+            Autores: <br>Alex Gutiérrez, Jorge Galvis, Carlos Rincón, Fabiola Martinez, Jorge Castañeda.
+        </p>
+        <span id="siteseal">
+            <script async="" type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=5KFODfiXDXf97r2O9kN3V3IdFWmCixuTpafU29Iw9q1PtMuE7j1HuWqySL92"></script>
+        </span>
+    </div>
+</footer>
+
+<!-- jQuery UI CSS -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
+<!-- jQuery UI JavaScript -->
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
